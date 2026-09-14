@@ -159,3 +159,37 @@ h1 {
     background-color: #a84f45;
     color: #ffffff;
 }
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-button {
+        display: block;
+        padding: 10px 16px;
+        border: 1px solid #a84f45;
+        border-radius: 8px;
+        background-color: #ffffff;
+        color: #3b2923;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 16px;
+    }
+
+    nav ul.menu-open {
+        display: flex;
+    }
+}

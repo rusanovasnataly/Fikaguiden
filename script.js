@@ -23,3 +23,13 @@ filterButtons.forEach(function (button) {
         button.setAttribute("aria-pressed", "true");
     });
 });
+
+const menuButton = document.querySelector(".menu-button");
+const mainMenu = document.querySelector("#main-menu");
+
+menuButton.addEventListener("click", function () {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+    mainMenu.classList.toggle("menu-open");
+});
