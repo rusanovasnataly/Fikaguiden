@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fikaguiden</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -36,46 +37,46 @@
             <h2>Recept</h2>
 
                <div class="filters" aria-label="Filtrera recept">
-                <button type="button">Alla</button>
-                <button type="button">Snabbt</button>
-                <button type="button">Kakor</button>
-                <button type="button">Bullar</button>
-                <button type="button">Pajer</button>
+                <button type="button" data-filter="all" aria-pressed="true">Alla</button>
+                <button type="button" data-filter="snabbt" aria-pressed="false">Snabbt</button>
+                <button type="button" data-filter="kakor" aria-pressed="false">Kakor</button>
+                <button type="button" data-filter="bullar" aria-pressed="false">Bullar</button>
+                <button type="button" data-filter="pajer" aria-pressed="false">Pajer</button>
                </div>
 
     <div class="recipe-list">
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-category="kakor">
             <h3>Chokladbollar</h3>
             <p>Kakor · 20 min</p>
             <p>Enkla och klassiska chokladbollar som passar perfekt till fikat.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-category="kakor">
             <h3>Kladdkaka med hallon</h3>
             <p>Kakor · 40 min</p>
             <p>En kladdig chokladkaka med syrliga hallon.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-category="bullar">
             <h3>Kanelbullar</h3>
             <p>Bullar · 90 min</p>
             <p>Mjuka kanelbullar med smör, kanel och socker.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-category="kakor">
             <h3>Citronkaka</h3>
             <p>Kakor · 45 min</p>
             <p>Frisk och saftig kaka med smak av citron.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-category="snabbt">
             <h3>Blåbärsmuffins</h3>
             <p>Snabbt · 30 min</p>
             <p>Saftiga muffins fyllda med blåbär.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-category="pajer">
             <h3>Äppelpaj</h3>
             <p>Pajer · 50 min</p>
             <p>En enkel äppelpaj med kanel och krispigt täcke.</p>

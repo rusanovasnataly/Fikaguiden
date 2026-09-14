@@ -154,3 +154,8 @@ h1 {
     }
 
 }
+
+.filters button[aria-pressed="true"] {
+    background-color: #a84f45;
+    color: #ffffff;
+}
