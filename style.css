@@ -193,3 +193,8 @@ h1 {
         display: flex;
     }
 }
+
+:focus-visible {
+    outline: 3px solid #3b2923;
+    outline-offset: 3px;
+}
