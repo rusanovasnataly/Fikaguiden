@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color: #fffaf5;
     color: #3b2923;
     line-height: 1.6;
@@ -24,11 +24,24 @@ nav {
     align-items: center;
 }
 
-nav > a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3b2923;
+.logo {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    color: #3b2923;
+}
+
+.logo-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo-tagline {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #7a6258;
+    margin-top: -2px;
 }
 
 nav ul {
@@ -57,9 +70,63 @@ section {
     padding: 80px 24px;
 }
 
+.hero {
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-label {
+    margin: 0 0 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #a84f45;
+}
+
+.hero h1 {
+    margin: 0 0 24px;
+    font-size: 4rem;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin: 0 0 28px;
+    font-size: 1.2rem;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: #a84f45;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero-button:hover {
+    background-color: #843b34;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+}
+
 h1,
 h2,
 h3 {
+    font-family: "Playfair Display", serif;
     line-height: 1.2;
 }
 
@@ -71,20 +138,6 @@ h1 {
 #home p {
     max-width: 600px;
     font-size: 1.2rem;
-}
-
-#home > a {
-    display: inline-block;
-    margin-top: 16px;
-    padding: 12px 20px;
-    background-color: #a84f45;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-#home > a:hover {
-    background-color: #843b34;
 }
 
 .recipe-list {
@@ -99,6 +152,15 @@ h1 {
     padding: 24px;
     border-radius: 12px;
     border: 1px solid #e5d8d0;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .recipe-card h3 {
@@ -153,6 +215,19 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero-image img {
+    height: 360px;
+}
+
 }
 
 .filters button[aria-pressed="true"] {
@@ -192,9 +267,81 @@ h1 {
     nav ul.menu-open {
         display: flex;
     }
+
+    .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-label {
+    margin: 0 0 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #a84f45;
+}
+
+.about h2 {
+    margin: 0 0 20px;
+    font-size: 2.8rem;
+}
+
+.about > p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #5f4a42;
+}
+
+footer {
+    padding: 32px 16px;
+}
 }
 
 :focus-visible {
     outline: 3px solid #3b2923;
     outline-offset: 3px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 40px 24px;
+    border-top: 1px solid #e5d8d0;
+    background-color: #f8efe9;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-logo {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-tagline {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: #7a6258;
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #7a6258;
 }

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <title>Fikaguiden</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -11,7 +14,10 @@
 <body>
   <header>
     <nav>
-    <a href="#home">Fikaguiden</a>
+    <a href="#home" class="logo">
+    <span class="logo-name">Fikaguiden</span>
+    <span class="logo-tagline">Något gott till fikat</span>
+</a>
 
     <button
         class="menu-button"
@@ -32,15 +38,28 @@
 
   <main>
 
-        <section id="home">
-            <h1>Vad blir det till fikat?</h1>
+        <section id="home" class="hero">
 
-            <p>
-                Hitta enkla och goda recept för dagens fikastund.
-            </p>
+    <div class="hero-content">
+        <p class="hero-label">FIKA · RECEPT · INSPIRATION</p>
 
-            <a href="#recipes">Se recept</a>
-        </section>
+        <h1>Vad blir det till fikat?</h1>
+
+        <p class="hero-text">
+            Hitta enkla och goda recept för dagens fikastund.
+        </p>
+
+        <a href="#recipes" class="hero-button">Se recept</a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="images/kladdkaka.jpg"
+            alt="Kladdkaka med hallon"
+        >
+    </div>
+
+</section>
 
         <section id="recipes">
             <h2>Recept</h2>
@@ -56,36 +75,42 @@
     <div class="recipe-list">
 
         <article class="recipe-card" data-category="kakor">
+            <img src="images/chokladbollar.jpg" alt="Chokladbollar med kokos">
             <h3>Chokladbollar</h3>
             <p>Kakor · 20 min</p>
             <p>Enkla och klassiska chokladbollar som passar perfekt till fikat.</p>
         </article>
 
         <article class="recipe-card" data-category="kakor">
+            <img src="images/kladdkaka.jpg" alt="Kladdkaka med hallon">
             <h3>Kladdkaka med hallon</h3>
             <p>Kakor · 40 min</p>
             <p>En kladdig chokladkaka med syrliga hallon.</p>
         </article>
 
         <article class="recipe-card" data-category="bullar">
+            <img src="images/kanelbullar.jpg" alt="Kanelbullar">
             <h3>Kanelbullar</h3>
             <p>Bullar · 90 min</p>
             <p>Mjuka kanelbullar med smör, kanel och socker.</p>
         </article>
 
         <article class="recipe-card" data-category="kakor">
+            <img src="images/citronkaka.jpg" alt="Citronkaka">
             <h3>Citronkaka</h3>
             <p>Kakor · 45 min</p>
             <p>Frisk och saftig kaka med smak av citron.</p>
         </article>
 
         <article class="recipe-card" data-category="snabbt">
+            <img src="images/blabarsmuffins.jpg" alt="Blåbärsmuffins">
             <h3>Blåbärsmuffins</h3>
             <p>Snabbt · 30 min</p>
             <p>Saftiga muffins fyllda med blåbär.</p>
         </article>
 
         <article class="recipe-card" data-category="pajer">
+            <img src="images/appelpaj.jpg" alt="Äppelpaj">
             <h3>Äppelpaj</h3>
             <p>Pajer · 50 min</p>
             <p>En enkel äppelpaj med kanel och krispigt täcke.</p>
@@ -94,23 +119,27 @@
     </div>
 </section>
 
-<section id="about">
-    <h2>Om Fikaguiden</h2>
+<section id="about" class="about">
+    <p class="section-label">OM FIKAGUIDEN</p>
+
+    <h2>Gott fika, enkelt gjort.</h2>
 
     <p>
-        Fikaguiden hjälper dig att hitta enkla och goda recept
-        för vardag och fika med familj och vänner.
-    </p>
-
-    <p>
-        Här samlar vi recept som är lätta att hitta, enkla att följa
-        och framför allt goda att dela.
+        Fikaguiden samlar enkla och goda recept för fika
+        med familj och vänner.
     </p>
 </section>
 
   </main>
   <footer>
-    <p>&copy; 2026 Fikaguiden Nataliia Rusanova </p>
+    <div class="footer-content">
+        <div>
+            <p class="footer-logo">Fikaguiden</p>
+            <p class="footer-tagline">något gott till fikat</p>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Fikaguiden</p>
+    </div>
 </footer>
 
 </body>
