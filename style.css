@@ -306,6 +306,22 @@ footer {
 }
 }
 
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: -100px;
+    padding: 12px 16px;
+    background-color: #3b2923;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
 :focus-visible {
     outline: 3px solid #3b2923;
     outline-offset: 3px;
